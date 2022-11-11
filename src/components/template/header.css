@@ -1,0 +1,130 @@
+.header {
+    background: linear-gradient(rgba(33, 34, 38, 0.92), rgba(33, 34, 38, 1)), url('../../assets/images/background.png') center center no-repeat;
+    background-size: cover;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 9vh;
+}
+
+.btn-config {
+    color: var(--light-color);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    transition: background-color 300ms ease-in-out;
+    border-radius: 10px;
+}
+
+.btn-config:hover {
+    color: black;
+    background-color: var(--light-color);
+}
+
+.gear {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.btn-config:hover .gear {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+}
+
+.title {
+    color: var(--light-color);
+    text-align: center;
+    font-size: 2.5rem;
+    width: 50%;
+}
+
+.btn-add {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    padding: 18px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: var(--primary-color) 0px 1px 8px;
+}
+
+.btn-add:hover {
+    transform: scale(1.03);
+}
+
+.btn-more {
+    color: var(--light-color);
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    height: 9vh;
+}
+
+.arrow {
+    width: 40px;
+    animation: arrow 1s ease-in-out alternate infinite;
+}
+
+@keyframes arrow {
+    from {
+        transform: translateY(-20px);
+    }
+}
+
+@media(max-width: 450px) {
+    .title {
+        font-size: 1.6rem;
+        width: 80%;
+    }
+    .btn-add {
+        padding: 15px;
+    }
+}
+
+@media(min-width: 451px) and (max-width: 900px) {
+    .title {
+        font-size: 2.3rem;
+        width: 80%;
+    }
+    .btn-add {
+        padding: 18px 25px;
+    }
+}

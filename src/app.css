@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #FF3800;
+    --secundary-color: #212226;
+    --card-color: #18191D;
+    --light-color: #FFFFFF;
+    --width-container: 1440px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.app {
+    display: grid;
+    grid-template-rows: 100vh 300px 1fr 100px;
+    grid-template-areas: "header" "benefits" "functions" "footer";
+}
+
+@media(max-width: 768px) {
+    .app {
+        grid-template-rows: 100vh 700px 1fr 100px;
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.benefits {
+    grid-area: benefits;
+}
+
+.functions {
+    grid-area: functions;
+}
+
+.footer {
+    grid-area: footer;
+}
