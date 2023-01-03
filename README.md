@@ -4,11 +4,11 @@
 
 
 ## 📝 Sobre
-Simples landing page relacionado ao bot de Discord Codefy, que inclui as funções do bot e seus benefícios, além de uma call to action para que o usuário adicione o bot em seu servidor Discord e um botão de configuração e personalização do bot.
+Landing page relacionado ao bot de Discord Codefy, que inclui as principais funções do bot, além de uma call to action para que o usuário adicione o bot em seu servidor Discord e um botão de configuração e personalização do bot.
 
 ## 🔥 Atualizações & Correções futuras
-- [ ] Adicionar aba de Perguntas frequentes
-- [ ] Melhorias na interface
+- [x] Adicionar aba de Perguntas frequentes
+- [x] Melhorias na interface
 
 
 ## 🔧 Configuração
@@ -26,10 +26,6 @@ Execute o comando para iniciar o projeto em modo desenvolvimento:
 npm start
 ```
 
-Execute o comando para iniciar o projeto em modo produção:
-```
-npm run build
-```
 
 ## 🤝 Colaboradores
 
