@@ -1,15 +1,10 @@
 # 💡 Landing page Codefy
 
-<img src="src/assets/images/preview.png" alt="preview">
+<img src="src/assets/imgs/preview.png" alt="preview">
 
 
 ## 📝 Sobre
-Landing page relacionado ao bot de Discord Codefy, que inclui as principais funções do bot, além de uma call to action para que o usuário adicione o bot em seu servidor Discord e um botão de configuração e personalização do bot.
-
-## 🔥 Atualizações & Correções futuras
-- [x] Adicionar aba de Perguntas frequentes
-- [x] Melhorias na interface
-
+Landing page criada para um bot de Discord, contendo as principais informações sobre o bot, as principais perguntas dos usuários, e as opções de adicionar e personalizar o bot.
 
 ## 🔧 Configuração
 

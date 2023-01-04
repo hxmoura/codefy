@@ -3,9 +3,8 @@ import './app.css'
 
 import Code from './assets/imgs/code.svg'
 import Arrow from './assets/imgs/arrow.svg'
-// import Gear from './assets/imgs/gear.svg'
-
-import Notebook from './assets/imgs/notebook.png'
+import Gear from './assets/imgs/gear.svg'
+import Header from './assets/imgs/header.png'
 import Music from './assets/imgs/music.png'
 import Documentation from './assets/imgs/documentation.png'
 import Sale from './assets/imgs/sale.png'
@@ -28,6 +27,7 @@ export default function Application() {
             question[i].onclick = function () {
                 answer[i].classList.toggle('faq-toggle')
                 question[i].classList.toggle('faq-arrow-toggle')
+                question[i].classList.toggle('faq-radius')
             }
         }
     }, 100)
@@ -46,11 +46,14 @@ export default function Application() {
                             <h1 className="title">Criado para facilitar a vida de desenvolvedores</h1>
                             <div className="btn-container">
                                 <button className="btn btn-add">Adicione em seu servidor</button>
-                                <button className="btn btn-settings">Configure</button>
+                                <button className="btn btn-settings">
+                                    Configure
+                                    <img className="img-gear" src={Gear} alt="Engrenagem" />
+                                </button>
                             </div>
                         </div>
                         <div className="image-container">
-                            <img className="img-header" src={Notebook} alt="Notebook" />
+                            <img className="img-header" src={Header} alt="Imagem Header" />
                         </div>
                     </section>
                     <section data-aos="fade-up" className="header-bottom">
@@ -64,15 +67,15 @@ export default function Application() {
                     <div data-aos="fade-up" className="container numbers-content">
                         <div className="number-item">
                             <h4 className="number-title">248</h4>
-                            <p className="number-description">Comunidades usam Codefy</p>
+                            <p className="number-description">Comunidades que atualmente usam Codefy</p>
                         </div>
                         <div className="number-item">
                             <h4 className="number-title">+12MIL</h4>
-                            <p className="number-description">Pessoas usam Codefy</p>
+                            <p className="number-description">Pessoas já otimizaram seu tempo com Codefy</p>
                         </div>
                         <div className="number-item">
                             <h4 className="number-title">19</h4>
-                            <p className="number-description">Empresas usam Codefy</p>
+                            <p className="number-description">Empresas que usam Codefy</p>
                         </div>
                     </div>
                 </section>
@@ -120,8 +123,8 @@ export default function Application() {
                         </div>
                     </div>
                 </section>
-                <section className="questions">
-                    <div data-aos="fade-up" className="container questions-container">
+                <section data-aos="fade-up" className="questions">
+                    <div className="container questions-container">
                         <h5 className="questions-title">Perguntas frequentes</h5>
                         <div className="faq-question">
                             <div className="question">
@@ -137,7 +140,7 @@ export default function Application() {
                                 <h4 className="faq-title">Como saber os comandos do bot ?</h4>
                                 <img className="faq-arrow" src={Arrow} alt="Seta" />
                             </div>
-                            <div className="answer space-bottom">
+                            <div className="answer">
                                 <p className="faq-response">Ao adicionar em seu servidor Discord, você poderá digitar <strong>!comandos</strong> em qualquer canal de texto, para ter acesso a todos benefícios da Codefy.</p>
                             </div>
                         </div>
@@ -164,8 +167,8 @@ export default function Application() {
                         </div>
                     </div>
                     <div className="footer-logo">
-                        <img className="logo-icon" src={Code} alt="Logo" />
-                        <strong className="logo-text">Codefy</strong>
+                        <img className="footer-logo-icon" src={Code} alt="Logo" />
+                        <strong className="footer-logo-text">Codefy</strong>
                     </div>
                 </div>
             </footer>
